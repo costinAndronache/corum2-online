@@ -369,14 +369,14 @@ void PreLoadResource()
 	}
 
 	// Shadow //
-	for(i = 1; i <= 4; i++)
+	for(int i = 1; i <= 4; i++)
 	{
 		wsprintf(szInfo, "df_shadow%02d.MOD", i);		
 		g_pExecutive->PreLoadGXObject(GetFile(szInfo, DATA_TYPE_CHARACTER));	
 	}
 	
 	// ±âº» ¸ö //
-	for(i = 1; i <= 5; i++)
+	for(int i = 1; i <= 5; i++)
 	{
 		wsprintf(szInfo, "pm0%d000.chr", i);		
 		g_pExecutive->PreLoadGXObject(GetFile(szInfo, DATA_TYPE_CHARACTER));	
@@ -668,7 +668,7 @@ BOOL InitGame()
 #endif	
 	wsprintf(szFile, "%s\\%s", g_szBasePath, "KeyConfig.ini");
 	
-	for(i = 0; i < MAX_KEY; i++)
+	for(int i = 0; i < MAX_KEY; i++)
 	{
 		GetPPS("KEY CONFIG", szTemp[i], szDefault[i], szReturn, 256, szFile);	
 		
@@ -831,7 +831,7 @@ void ReleaseGame()
 		g_pGVLogin = NULL;
 	}
 
-	for(i = 0; i < 5; i++)
+	for(int i = 0; i < 5; i++)
 	{
 		POSITION_ pos = g_sSkillListManager.pSkillList[i].pActiveList->GetHeadPosition();	
 		POSITION_ posTemp;
@@ -1765,7 +1765,7 @@ int KeyCheck(int nKey)
 
 void LoadSkillresourceTable()
 {
-	for(int i = 0; i < 5; i++)
+	for(int i = 0; i < 6; i++)
 	{
 		g_sSkillListManager.pSkillList[i].pActiveList		= new COnlyList(MAX_SKILL_NODE);
 		g_sSkillListManager.pSkillList[i].pPassiveList		= new COnlyList(MAX_SKILL_NODE);
@@ -1789,8 +1789,9 @@ void LoadSkillresourceTable()
 	g_sSkillListManager.byLeftSkill[0] = 0;
 	g_sSkillListManager.byRightSkill[0] = 0;
 
-	for(i = 0; i < nMaxNode; i++)
-	{		
+	for(int i = 0; i < nMaxNode; i++)
+	{
+		if (sSkillResource[i].byType >= 5) { continue; }
 		lpSkillResourceEx = (LP_SKILL_RESOURCE_EX)LALAlloc(g_pSkillReosurcePool); 
 
 		memset(lpSkillResourceEx->szFileName, 0, sizeof(lpSkillResourceEx->szFileName));
@@ -1841,9 +1842,9 @@ void LoadSkillresourceTable()
 
 void LoadItemResourceTable()
 {
-	SITEM_RESOURCE		sItemResource[2000];
-	ITEM_STORE			sItemStore[2000];
-	ITEM_OPTION			sItemOption[2000];	
+	SITEM_RESOURCE*     sItemResource = new SITEM_RESOURCE[20000];
+	ITEM_STORE*			sItemStore = new ITEM_STORE[20000];
+	ITEM_OPTION*		sItemOption = new ITEM_OPTION[20000];	
 	LP_ITEM_RESOURCE_EX	lpItemResource=0;	
 	LP_ITEM_STORE		lpItemStore=0;
 	LP_ITEM_OPTION		lpItemOption=0;
@@ -1857,7 +1858,7 @@ void LoadItemResourceTable()
 
 	for(int i = 0; i < nMaxNode; i++)
 	{
-		lpItemResource = (LP_ITEM_RESOURCE_EX)LALAlloc(g_pItemResourcePool);
+		lpItemResource = new SITEM_RESOURCE_EX;
 
 		if(lpItemResource == NULL)
 			MessageBox(g_hMainWnd, "Item Resource Pool = NULL", "CorumOnline", MB_OK);
@@ -1912,7 +1913,7 @@ void LoadItemResourceTable()
 	nMaxNode = nTotalSize / sizeof(ITEM_STORE);	
 	_CHECK_MEMORY();
 
-	for(i = 0; i < nMaxNode; i++)
+	for(int i = 0; i < nMaxNode; i++)
 	{		
 		lpItemStore = (LP_ITEM_STORE)LALAlloc(g_pItemStorePool);
 
@@ -1932,9 +1933,9 @@ void LoadItemResourceTable()
 	nMaxNode = nTotalSize / sizeof(ITEM_OPTION);	
 	_CHECK_MEMORY();
 
-	for(i = 0; i < nMaxNode; i++)
+	for(int i = 0; i < nMaxNode; i++)
 	{		
-		lpItemOption = (LP_ITEM_OPTION)LALAlloc(g_pItemOptionPool);
+		lpItemOption = new ITEM_OPTION;
 
 		if(lpItemOption==NULL)
 			MessageBox(g_hMainWnd, "Item Option Pool = NULL", "CorumOnline", MB_OK);
@@ -1944,6 +1945,10 @@ void LoadItemResourceTable()
 		
 		g_pItemOptionHash->Insert(lpItemOption, sItemOption[i].wId);		
 	}
+
+	delete[] sItemResource;
+	delete[] sItemStore;
+	delete[] sItemOption;
 }
 
 void LoadHelpInfo()
@@ -2145,7 +2150,7 @@ void LoadBaseItemTable()
 	nTotalSize	= DecodeCDBData(GetFile("ItemArmor.cdb", DATA_TYPE_MANAGER), sArmorItem);
 	nSize		= sizeof(BASEITEM_ARMOR) + dwDefaultSize;
 	nMaxNode	= nTotalSize / nSize;
-	for(i = 0; i < nMaxNode; i++)
+	for(int i = 0; i < nMaxNode; i++)
 	{
 		pBaseItem = new CBaseItem;
 		memset(pBaseItem, 0, sizeof(CBaseItem));		
@@ -2157,7 +2162,7 @@ void LoadBaseItemTable()
 	nTotalSize	= DecodeCDBData(GetFile("ItemSupplies.cdb", DATA_TYPE_MANAGER), sSuppliesItem);
 	nSize		= sizeof(BASEITEM_SUPPLIES) + dwDefaultSize;
 	nMaxNode	= nTotalSize / nSize;
-	for(i = 0; i < nMaxNode; i++)
+	for(int i = 0; i < nMaxNode; i++)
 	{
 		pBaseItem = new CBaseItem;
 		memset(pBaseItem, 0, sizeof(CBaseItem));		
@@ -2169,7 +2174,7 @@ void LoadBaseItemTable()
 	nTotalSize	= DecodeCDBData(GetFile("ItemRide.cdb", DATA_TYPE_MANAGER), sRideItem);
 	nSize		= sizeof(BASEITEM_RIDE) + dwDefaultSize;
 	nMaxNode	= nTotalSize / nSize;
-	for(i = 0; i < nMaxNode; i++)
+	for(int i = 0; i < nMaxNode; i++)
 	{
 		pBaseItem = new CBaseItem;
 		memset(pBaseItem, 0, sizeof(CBaseItem));		
@@ -2181,7 +2186,7 @@ void LoadBaseItemTable()
 	nTotalSize	= DecodeCDBData(GetFile("ItemSpecial.cdb", DATA_TYPE_MANAGER), sSpecialItem);
 	nSize		= sizeof(BASEITEM_SPECIAL) + dwDefaultSize;
 	nMaxNode	= nTotalSize / nSize;
-	for(i = 0; i < nMaxNode; i++)
+	for(int i = 0; i < nMaxNode; i++)
 	{
 		pBaseItem = new CBaseItem;
 		memset(pBaseItem, 0, sizeof(CBaseItem));		
@@ -2193,7 +2198,7 @@ void LoadBaseItemTable()
 	nTotalSize	= DecodeCDBData(GetFile("ItemZodiac.cdb", DATA_TYPE_MANAGER), sZodiacItem);
 	nSize		= sizeof(BASEITEM_ZODIAC) + dwDefaultSize;
 	nMaxNode	= nTotalSize / nSize;
-	for(i = 0; i < nMaxNode; i++)
+	for(int i = 0; i < nMaxNode; i++)
 	{
 		pBaseItem = new CBaseItem;
 		memset(pBaseItem, 0, sizeof(CBaseItem));		
@@ -2205,7 +2210,7 @@ void LoadBaseItemTable()
 	nTotalSize	= DecodeCDBData(GetFile("ItemGuardian.cdb", DATA_TYPE_MANAGER), sGuardianItem);
 	nSize		= sizeof(BASEITEM_GUARDIAN) + dwDefaultSize;
 	nMaxNode	= nTotalSize / nSize;
-	for(i = 0; i < nMaxNode; i++)
+	for(int i = 0; i < nMaxNode; i++)
 	{
 		pBaseItem = new CBaseItem;
 		memset(pBaseItem, 0, sizeof(CBaseItem));		
@@ -2217,7 +2222,7 @@ void LoadBaseItemTable()
 	nTotalSize	= DecodeCDBData(GetFile("ItemMagicArray.cdb", DATA_TYPE_MANAGER), sMagicArrayItem);
 	nSize		= sizeof(BASEITEM_MAGICARRAY) + dwDefaultSize;
 	nMaxNode	= nTotalSize / nSize;
-	for(i = 0; i < nMaxNode; i++)
+	for(int i = 0; i < nMaxNode; i++)
 	{
 		pBaseItem = new CBaseItem;
 		memset(pBaseItem, 0, sizeof(CBaseItem));		
@@ -2229,7 +2234,7 @@ void LoadBaseItemTable()
 	nTotalSize	= DecodeCDBData(GetFile("ItemMaterials.cdb", DATA_TYPE_MANAGER), sMaterials);
 	nSize		= sizeof(BASEITEM_MATERIALS) + dwDefaultSize;
 	nMaxNode	= nTotalSize / nSize;
-	for(i = 0; i < nMaxNode; i++)
+	for(int i = 0; i < nMaxNode; i++)
 	{
 		pBaseItem = new CBaseItem;
 		memset(pBaseItem, 0, sizeof(CBaseItem));		
@@ -2241,7 +2246,7 @@ void LoadBaseItemTable()
 	nTotalSize	= DecodeCDBData(GetFile("ItemMixUpgrade.cdb", DATA_TYPE_MANAGER), sMixUpgrade);
 	nSize		= sizeof(BASEITEM_MIX_UPGRADE) + dwDefaultSize;
 	nMaxNode	= nTotalSize / nSize;
-	for(i = 0; i < nMaxNode; i++)
+	for(int i = 0; i < nMaxNode; i++)
 	{
 		pBaseItem = new CBaseItem;
 		memset(pBaseItem, 0, sizeof(CBaseItem));		
@@ -2253,7 +2258,7 @@ void LoadBaseItemTable()
 	nTotalSize	= DecodeCDBData(GetFile("ItemMagicFieldArray.cdb", DATA_TYPE_MANAGER), sMagicFieldArray);
 	nSize		= sizeof(BASEITEM_MAGICFIELD_ARRAY) + dwDefaultSize;
 	nMaxNode	= nTotalSize / nSize;
-	for(i = 0; i < nMaxNode; i++)
+	for(int i = 0; i < nMaxNode; i++)
 	{
 		pBaseItem = new CBaseItem;
 		memset(pBaseItem, 0, sizeof(CBaseItem));		
@@ -2265,7 +2270,7 @@ void LoadBaseItemTable()
 	nTotalSize	= DecodeCDBData(GetFile("ItemConsumable.cdb", DATA_TYPE_MANAGER), sCunsumableItem);
 	nSize		= sizeof(BASEITEM_CONSUMABLE) + dwDefaultSize;
 	nMaxNode	= nTotalSize / nSize;
-	for(i = 0; i < nMaxNode; i++)
+	for(int i = 0; i < nMaxNode; i++)
 	{
 		pBaseItem = new CBaseItem;
 		memset(pBaseItem, 0, sizeof(CBaseItem));		
@@ -2277,7 +2282,7 @@ void LoadBaseItemTable()
 	nTotalSize	= DecodeCDBData(GetFile("ItemUpgrade.cdb",DATA_TYPE_MANAGER), sUpGradeItem);
 	nSize		= sizeof(BASEITEM_UPGRADE) + dwDefaultSize;
 	nMaxNode	= nTotalSize / nSize;
-	for(i = 0; i < nMaxNode; i++)
+	for(int i = 0; i < nMaxNode; i++)
 	{
 		pBaseItem = new CBaseItem;
 		memset(pBaseItem, 0, sizeof(CBaseItem));		
@@ -2289,7 +2294,7 @@ void LoadBaseItemTable()
 	nTotalSize	= DecodeCDBData(GetFile("Itemliquid.cdb",DATA_TYPE_MANAGER), sLiQuidItem);
 	nSize		= sizeof(BASEITEM_LIQUID) + dwDefaultSize;
 	nMaxNode	= nTotalSize / nSize;
-	for(i = 0; i < nMaxNode; i++)
+	for(int i = 0; i < nMaxNode; i++)
 	{
 		pBaseItem = new CBaseItem;
 		memset(pBaseItem, 0, sizeof(CBaseItem));		
@@ -2301,7 +2306,7 @@ void LoadBaseItemTable()
 	nTotalSize	= DecodeCDBData(GetFile("ItemEdition.cdb",DATA_TYPE_MANAGER), sEditionItem);
 	nSize		= sizeof(BASEITEM_EDITION) + dwDefaultSize;
 	nMaxNode	= nTotalSize / nSize;
-	for(i = 0; i < nMaxNode; i++)
+	for(int i = 0; i < nMaxNode; i++)
 	{
 		pBaseItem = new CBaseItem;
 		memset(pBaseItem, 0, sizeof(CBaseItem));		
@@ -2313,7 +2318,7 @@ void LoadBaseItemTable()
 	nTotalSize	= DecodeCDBData(GetFile("ItemBag.cdb", DATA_TYPE_MANAGER), sBagItem);
 	nSize		= sizeof(BASEITEM_BAG) + dwDefaultSize;
 	nMaxNode	= nTotalSize / nSize;
-	for(i = 0; i < nMaxNode; i++)
+	for(int i = 0; i < nMaxNode; i++)
 	{
 		pBaseItem = new CBaseItem;
 		memset(pBaseItem, 0, sizeof(CBaseItem));		
@@ -2321,7 +2326,7 @@ void LoadBaseItemTable()
 		g_pItemTableHash->Insert(pBaseItem, pBaseItem->wID);				
 	}	
 
-	SetCommonServerBaseItemHash(g_pItemTableHash);	
+	//SetCommonServerBaseItemHash(g_pItemTableHash);	
 }
 
 void LoadItemTable()
@@ -2358,7 +2363,7 @@ void LoadItemTable()
 	nTotalSize	= DecodeCDBData(GetFile("ItemMaking.cdb", DATA_TYPE_MANAGER), sItemMakingInfo );
 	nMaxNode	= nTotalSize / sizeof( ITEM_MAKING_INFO );
 
-	for( i=0; i<nMaxNode; i++)
+	for(int i=0; i<nMaxNode; i++)
 	{
 		pItemMakingInfo = new ITEM_MAKING_INFO;
 		memcpy( pItemMakingInfo, &sItemMakingInfo[i], sizeof( ITEM_MAKING_INFO ) );

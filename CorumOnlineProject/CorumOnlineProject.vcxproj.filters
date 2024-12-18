@@ -2,169 +2,169 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{f64a5bb3-ee5e-4a61-85f4-3543eb64f286}</UniqueIdentifier>
+      <UniqueIdentifier>{55116f0a-e553-4fc3-b7aa-80175d12e6a4}</UniqueIdentifier>
       <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
     </Filter>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{4deb7c6b-5f09-45ee-92a7-8e0bffa8e6c1}</UniqueIdentifier>
+      <UniqueIdentifier>{c807597d-ee23-46a3-a16d-724e8aeb5846}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl</Extensions>
     </Filter>
     <Filter Include="Resource Files">
-      <UniqueIdentifier>{6c88ce8c-4dc5-4cba-bb28-1464112f9f30}</UniqueIdentifier>
+      <UniqueIdentifier>{1aa5eabf-d8f1-4aa4-97dc-a490f3137767}</UniqueIdentifier>
       <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
     </Filter>
     <Filter Include="Intro">
-      <UniqueIdentifier>{28548b17-13c8-416a-9672-e2543dd04578}</UniqueIdentifier>
+      <UniqueIdentifier>{9fe4cba2-70c9-400f-8bc0-cdb2d68a7a99}</UniqueIdentifier>
       <Extensions>cpp;h;inl</Extensions>
     </Filter>
     <Filter Include="Login">
-      <UniqueIdentifier>{866405d5-53c2-46f1-9efd-f25832a67742}</UniqueIdentifier>
+      <UniqueIdentifier>{f7e2195f-e606-429a-98e8-05cb643eb762}</UniqueIdentifier>
       <Extensions>cpp;h;inl</Extensions>
     </Filter>
     <Filter Include="CharSelect">
-      <UniqueIdentifier>{9fde27b2-c975-469e-b13a-4ab7a60bc7ef}</UniqueIdentifier>
+      <UniqueIdentifier>{bd5c267f-aae6-4ac8-89dd-8630c25c588c}</UniqueIdentifier>
     </Filter>
     <Filter Include="World">
-      <UniqueIdentifier>{8fdea71c-497c-4790-9c22-ca02fc60e6d5}</UniqueIdentifier>
+      <UniqueIdentifier>{ec19c4bf-bc8a-4e67-9327-fd72712182e4}</UniqueIdentifier>
       <Extensions>cpp;h;inl</Extensions>
     </Filter>
     <Filter Include="World\World Msg">
-      <UniqueIdentifier>{bd874699-fa60-4bb7-919f-3bf53ebf0f79}</UniqueIdentifier>
+      <UniqueIdentifier>{4d66aa42-1b63-4d9c-ade9-530f226c868e}</UniqueIdentifier>
     </Filter>
     <Filter Include="Dungeon">
-      <UniqueIdentifier>{945fd1b5-593f-4755-b422-d371956cb99c}</UniqueIdentifier>
+      <UniqueIdentifier>{a7a5913c-0630-4310-878b-08f375a5ba86}</UniqueIdentifier>
     </Filter>
     <Filter Include="Dungeon\Dungeon Msg">
-      <UniqueIdentifier>{f4e3a616-818a-421a-bd6b-d4b4169333ff}</UniqueIdentifier>
+      <UniqueIdentifier>{954d7c82-69ea-44a6-9e32-e20acc031a86}</UniqueIdentifier>
     </Filter>
     <Filter Include="PathFinding">
-      <UniqueIdentifier>{7d7e6578-bdbd-4928-b5d6-ebf51be2c376}</UniqueIdentifier>
+      <UniqueIdentifier>{ab24a665-31fb-4454-8c7a-8d77b9cadf14}</UniqueIdentifier>
       <Extensions>cpp;h;inl</Extensions>
     </Filter>
     <Filter Include="Resource">
-      <UniqueIdentifier>{c732e558-9e8e-4160-9417-98091a5be571}</UniqueIdentifier>
+      <UniqueIdentifier>{f6520aad-d41b-4da0-9a09-1b6f06cb8767}</UniqueIdentifier>
       <Extensions>h</Extensions>
     </Filter>
     <Filter Include="Effect">
-      <UniqueIdentifier>{c30248cb-44a9-4dd4-9d02-6ea29d1ce98a}</UniqueIdentifier>
+      <UniqueIdentifier>{e173ba49-89cd-49d1-9a5f-463cb5aa7ed9}</UniqueIdentifier>
       <Extensions>cpp;h;inl</Extensions>
     </Filter>
     <Filter Include="Interface">
-      <UniqueIdentifier>{843eb566-92e0-4a4d-92fb-73afa787cf1c}</UniqueIdentifier>
+      <UniqueIdentifier>{0c6edae1-1b9c-4a4d-9b97-d56c140703c0}</UniqueIdentifier>
     </Filter>
     <Filter Include="Interface\BaloonChat">
-      <UniqueIdentifier>{c6ee708f-7e2b-451b-8e5a-91a10b49bb6e}</UniqueIdentifier>
+      <UniqueIdentifier>{defd1787-aaf2-410f-a2fd-3b3c5bec13c7}</UniqueIdentifier>
       <Extensions>cpp;h</Extensions>
     </Filter>
     <Filter Include="Interface\BlockWnd">
-      <UniqueIdentifier>{5746fd3b-9e0e-4e86-83f6-2ba3d0a0596a}</UniqueIdentifier>
+      <UniqueIdentifier>{d31ea73d-b18b-4b3b-801e-a2a4d248c2e4}</UniqueIdentifier>
       <Extensions>cpp;h</Extensions>
     </Filter>
     <Filter Include="Interface\DungeonInfo Wnd">
-      <UniqueIdentifier>{403b76d6-980e-45d5-b03b-1f7a435c8b30}</UniqueIdentifier>
+      <UniqueIdentifier>{ad6b4abb-6386-40ee-9549-9b035b523b89}</UniqueIdentifier>
       <Extensions>cpp;h</Extensions>
     </Filter>
     <Filter Include="Interface\Character Change">
-      <UniqueIdentifier>{38093bc5-ee24-4b57-a318-0ac106a6e489}</UniqueIdentifier>
+      <UniqueIdentifier>{c7da9d98-c625-4b14-8bab-7c65ffcaaa33}</UniqueIdentifier>
       <Extensions>cpp;h</Extensions>
     </Filter>
     <Filter Include="Interface\Character Status Wnd">
-      <UniqueIdentifier>{88b415f2-f1a7-41a1-88d8-6a7d86cae21f}</UniqueIdentifier>
+      <UniqueIdentifier>{1609fcf6-4cfa-414a-8477-ac8cc8037077}</UniqueIdentifier>
       <Extensions>cpp;h</Extensions>
     </Filter>
     <Filter Include="Interface\MiniMap Wnd">
-      <UniqueIdentifier>{2c01a1e3-93cf-4064-af64-6f569ef5a791}</UniqueIdentifier>
+      <UniqueIdentifier>{2e8d16de-78f4-4c76-bdde-46900e882c9e}</UniqueIdentifier>
       <Extensions>cpp;h</Extensions>
     </Filter>
     <Filter Include="Interface\Dungeon Siege Info Wnd">
-      <UniqueIdentifier>{d6c93040-bb1a-4f1b-aa61-b22866b8059e}</UniqueIdentifier>
+      <UniqueIdentifier>{6dd511c1-ef44-463f-a878-ad2861472476}</UniqueIdentifier>
       <Extensions>cpp;h</Extensions>
     </Filter>
     <Filter Include="Interface\Event Dungeon">
-      <UniqueIdentifier>{e8889b55-405a-479f-8563-da90801373ea}</UniqueIdentifier>
+      <UniqueIdentifier>{59fd9523-cf88-460e-ad76-735ca5f31b76}</UniqueIdentifier>
       <Extensions>cpp;h</Extensions>
     </Filter>
     <Filter Include="Interface\Guild">
-      <UniqueIdentifier>{f6f023e3-9da0-4fdd-a84f-d416ff25e028}</UniqueIdentifier>
+      <UniqueIdentifier>{b31c4eed-51fd-42b8-887a-b8a9f8b50838}</UniqueIdentifier>
       <Extensions>cpp; h</Extensions>
     </Filter>
     <Filter Include="Interface\Party">
-      <UniqueIdentifier>{ccea2a1f-628b-4761-9a73-f264cb40ab1d}</UniqueIdentifier>
+      <UniqueIdentifier>{b0ec1f22-e7a2-46c7-8648-feed20e48863}</UniqueIdentifier>
       <Extensions>cpp;h</Extensions>
     </Filter>
     <Filter Include="Interface\Item">
-      <UniqueIdentifier>{d4322162-0c5a-46f0-b72b-88509d902249}</UniqueIdentifier>
+      <UniqueIdentifier>{4dd71acd-6afb-4b17-9b28-5e201150088c}</UniqueIdentifier>
       <Extensions>cpp;h</Extensions>
     </Filter>
     <Filter Include="Interface\Login Wnd">
-      <UniqueIdentifier>{704b7a2b-50f1-4496-8268-78681f36282b}</UniqueIdentifier>
+      <UniqueIdentifier>{64b39b43-5b77-44b6-be0a-4b6cf096f3e7}</UniqueIdentifier>
       <Extensions>cpp;h</Extensions>
     </Filter>
     <Filter Include="Interface\Match">
-      <UniqueIdentifier>{cde1abe4-ed25-4441-b831-7128655eff56}</UniqueIdentifier>
+      <UniqueIdentifier>{ae4369f0-ef3e-4dce-ad8d-9e909cbb3757}</UniqueIdentifier>
       <Extensions>cpp;h</Extensions>
     </Filter>
     <Filter Include="Interface\Skill Wnd">
-      <UniqueIdentifier>{493eb9fc-55c4-48e3-abc3-8f8409ad1280}</UniqueIdentifier>
+      <UniqueIdentifier>{052e3112-173a-4559-934f-477ea5c87312}</UniqueIdentifier>
       <Extensions>cpp;h</Extensions>
     </Filter>
     <Filter Include="Interface\Wnds in Dungeon">
-      <UniqueIdentifier>{33fbc7d3-31ce-40b4-b599-db7d1c3631e6}</UniqueIdentifier>
+      <UniqueIdentifier>{d92d9242-f048-4980-a267-95ebcc692919}</UniqueIdentifier>
       <Extensions>cpp;h</Extensions>
     </Filter>
     <Filter Include="Interface\Guandina Status Wnd">
-      <UniqueIdentifier>{f727c733-3aaf-4b2b-b5bb-c0a7efe29be0}</UniqueIdentifier>
+      <UniqueIdentifier>{236102c8-3f8b-415a-9998-da095fa5cb95}</UniqueIdentifier>
     </Filter>
     <Filter Include="GMTool">
-      <UniqueIdentifier>{64571a77-269f-463f-9afc-7f01972a3652}</UniqueIdentifier>
+      <UniqueIdentifier>{e2cf855c-591e-4860-bd94-b276a8cbd709}</UniqueIdentifier>
       <Extensions>cpp;h;inl</Extensions>
     </Filter>
     <Filter Include="sound">
-      <UniqueIdentifier>{89c6fabf-def8-4738-9ba6-42988c1be97d}</UniqueIdentifier>
+      <UniqueIdentifier>{cf17accd-fc34-49f6-940d-82c2f3bba368}</UniqueIdentifier>
     </Filter>
     <Filter Include="Minbobo">
-      <UniqueIdentifier>{1c85dc0f-baa6-49d8-84c3-0b397cc1e355}</UniqueIdentifier>
+      <UniqueIdentifier>{02669f76-6e13-4a28-86df-14013b64e17d}</UniqueIdentifier>
     </Filter>
     <Filter Include="SS3DEngine">
-      <UniqueIdentifier>{757fbaac-15f7-4945-b949-218682d05af3}</UniqueIdentifier>
+      <UniqueIdentifier>{ad013b40-fcf9-4cbd-9c52-2a60687c9562}</UniqueIdentifier>
     </Filter>
     <Filter Include="Netmarble">
-      <UniqueIdentifier>{b340e16d-bfac-4217-ad64-5e2095e7a08c}</UniqueIdentifier>
+      <UniqueIdentifier>{be7b0efd-8bc1-4d73-a84f-c88707d0a828}</UniqueIdentifier>
     </Filter>
     <Filter Include="Interface Sprite">
-      <UniqueIdentifier>{f6441e06-4d63-4b61-8c19-b191564ce050}</UniqueIdentifier>
+      <UniqueIdentifier>{00b7c45b-214a-4eb2-b863-5fe2be558200}</UniqueIdentifier>
     </Filter>
     <Filter Include="DeepDark">
-      <UniqueIdentifier>{dd10d0cf-d6b0-40dc-baa0-96964cde4cdc}</UniqueIdentifier>
+      <UniqueIdentifier>{81833b9d-8c45-4e7e-8833-06a56ab00e5a}</UniqueIdentifier>
     </Filter>
     <Filter Include="Seven">
-      <UniqueIdentifier>{c31649d6-ee96-4ad4-9910-ce6b9a794192}</UniqueIdentifier>
+      <UniqueIdentifier>{55262d17-ce7f-42e7-9d26-dead8f5c69c1}</UniqueIdentifier>
     </Filter>
     <Filter Include="JJW6263">
-      <UniqueIdentifier>{9a4c3d78-967e-4b21-b0ce-3cee4490d71f}</UniqueIdentifier>
+      <UniqueIdentifier>{85e7dee0-db47-43e6-9557-6009db341099}</UniqueIdentifier>
     </Filter>
     <Filter Include="Hash &amp; List">
-      <UniqueIdentifier>{831e0fa7-49e6-4c96-a5b2-58415ba2474d}</UniqueIdentifier>
+      <UniqueIdentifier>{1f97e3d7-bdbc-4a46-8c1a-570c2d5bbab2}</UniqueIdentifier>
     </Filter>
     <Filter Include="ChinaBilling">
-      <UniqueIdentifier>{c1c094d8-0821-4bfd-a837-3122e2c81aaa}</UniqueIdentifier>
+      <UniqueIdentifier>{6300dbca-8da9-4eb1-97c4-8dcb2d117637}</UniqueIdentifier>
     </Filter>
     <Filter Include="ItemNative">
-      <UniqueIdentifier>{799ce221-fd96-4480-aaa2-0f87c10fad39}</UniqueIdentifier>
+      <UniqueIdentifier>{637770dc-b697-47d2-862b-7256a221e190}</UniqueIdentifier>
     </Filter>
     <Filter Include="ItemNativeWnd">
-      <UniqueIdentifier>{241619d4-be78-42a9-86fe-aa3463081af7}</UniqueIdentifier>
+      <UniqueIdentifier>{3d4adb11-0969-473a-b165-29f3d0b888e2}</UniqueIdentifier>
     </Filter>
     <Filter Include="RivalGuildWar">
-      <UniqueIdentifier>{cc911b8a-54ce-4fe3-afa1-7c9cca1b37ed}</UniqueIdentifier>
+      <UniqueIdentifier>{9620711f-32a0-476f-bf33-41e7f9af5f4c}</UniqueIdentifier>
       <Extensions>cpp;h</Extensions>
     </Filter>
     <Filter Include="minjin">
-      <UniqueIdentifier>{465b02e8-1922-4d11-812a-575bc703ebaa}</UniqueIdentifier>
+      <UniqueIdentifier>{ec2426ee-8704-4f80-8487-cca86fa5c117}</UniqueIdentifier>
       <Extensions>cpp;h</Extensions>
     </Filter>
     <Filter Include="CommonServer">
-      <UniqueIdentifier>{2493843d-e7a7-427e-9721-fdf27e02ab1c}</UniqueIdentifier>
+      <UniqueIdentifier>{bb131c5a-c0b9-47e7-9ed9-1f31795355e6}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -339,6 +339,9 @@
     <ClCompile Include="SpecialCharacterJPN.cpp">
       <Filter>CharSelect</Filter>
     </ClCompile>
+    <ClCompile Include="WorldProcess.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
     <ClCompile Include="WorldMsg_jjw6263.cpp">
       <Filter>World\World Msg</Filter>
     </ClCompile>
@@ -348,8 +351,14 @@
     <ClCompile Include="WorldMsg_yak.cpp">
       <Filter>World\World Msg</Filter>
     </ClCompile>
-    <ClCompile Include="WorldProcess.cpp">
-      <Filter>World</Filter>
+    <ClCompile Include="DungeonProcess.cpp">
+      <Filter>Dungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="DungeonProcess2nd.cpp">
+      <Filter>Dungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="DungeonProcess_Sound.cpp">
+      <Filter>Dungeon</Filter>
     </ClCompile>
     <ClCompile Include="DungeonMsg.cpp">
       <Filter>Dungeon\Dungeon Msg</Filter>
@@ -368,15 +377,6 @@
     </ClCompile>
     <ClCompile Include="DungeonMsg_yak.cpp">
       <Filter>Dungeon\Dungeon Msg</Filter>
-    </ClCompile>
-    <ClCompile Include="DungeonProcess.cpp">
-      <Filter>Dungeon</Filter>
-    </ClCompile>
-    <ClCompile Include="DungeonProcess2nd.cpp">
-      <Filter>Dungeon</Filter>
-    </ClCompile>
-    <ClCompile Include="DungeonProcess_Sound.cpp">
-      <Filter>Dungeon</Filter>
     </ClCompile>
     <ClCompile Include="PathFinding\BlockLineManager.cpp">
       <Filter>PathFinding</Filter>
@@ -410,6 +410,66 @@
     </ClCompile>
     <ClCompile Include="EffectProcess.cpp">
       <Filter>Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="ChatListWnd.cpp">
+      <Filter>Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="ComboBox.cpp">
+      <Filter>Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandWnd.cpp">
+      <Filter>Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="DefaultWnd.cpp">
+      <Filter>Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="GameDefaultWnd.cpp">
+      <Filter>Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="GameMenuWnd.cpp">
+      <Filter>Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="GameNoticeWnd.cpp">
+      <Filter>Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="GroupWnd.cpp">
+      <Filter>Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="HelpWnd.cpp">
+      <Filter>Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="InitItemWnd.cpp">
+      <Filter>Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface.cpp">
+      <Filter>Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu.cpp">
+      <Filter>Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="MessengerDeleteWnd.cpp">
+      <Filter>Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="MessengerWnd.cpp">
+      <Filter>Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="NpcDungeonInfoWnd.cpp">
+      <Filter>Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="OkWnd.cpp">
+      <Filter>Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="RankNpcWnd.cpp">
+      <Filter>Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="RankWnd.cpp">
+      <Filter>Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="TopDungeonHelpWnd.cpp">
+      <Filter>Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldWnd.cpp">
+      <Filter>Interface</Filter>
     </ClCompile>
     <ClCompile Include="BaloonChat.cpp">
       <Filter>Interface\BaloonChat</Filter>
@@ -539,66 +599,6 @@
     </ClCompile>
     <ClCompile Include="GuardianWnd.cpp">
       <Filter>Interface\Guandina Status Wnd</Filter>
-    </ClCompile>
-    <ClCompile Include="ChatListWnd.cpp">
-      <Filter>Interface</Filter>
-    </ClCompile>
-    <ClCompile Include="ComboBox.cpp">
-      <Filter>Interface</Filter>
-    </ClCompile>
-    <ClCompile Include="CommandWnd.cpp">
-      <Filter>Interface</Filter>
-    </ClCompile>
-    <ClCompile Include="DefaultWnd.cpp">
-      <Filter>Interface</Filter>
-    </ClCompile>
-    <ClCompile Include="GameDefaultWnd.cpp">
-      <Filter>Interface</Filter>
-    </ClCompile>
-    <ClCompile Include="GameMenuWnd.cpp">
-      <Filter>Interface</Filter>
-    </ClCompile>
-    <ClCompile Include="GameNoticeWnd.cpp">
-      <Filter>Interface</Filter>
-    </ClCompile>
-    <ClCompile Include="GroupWnd.cpp">
-      <Filter>Interface</Filter>
-    </ClCompile>
-    <ClCompile Include="HelpWnd.cpp">
-      <Filter>Interface</Filter>
-    </ClCompile>
-    <ClCompile Include="InitItemWnd.cpp">
-      <Filter>Interface</Filter>
-    </ClCompile>
-    <ClCompile Include="Interface.cpp">
-      <Filter>Interface</Filter>
-    </ClCompile>
-    <ClCompile Include="Menu.cpp">
-      <Filter>Interface</Filter>
-    </ClCompile>
-    <ClCompile Include="MessengerDeleteWnd.cpp">
-      <Filter>Interface</Filter>
-    </ClCompile>
-    <ClCompile Include="MessengerWnd.cpp">
-      <Filter>Interface</Filter>
-    </ClCompile>
-    <ClCompile Include="NpcDungeonInfoWnd.cpp">
-      <Filter>Interface</Filter>
-    </ClCompile>
-    <ClCompile Include="OkWnd.cpp">
-      <Filter>Interface</Filter>
-    </ClCompile>
-    <ClCompile Include="RankNpcWnd.cpp">
-      <Filter>Interface</Filter>
-    </ClCompile>
-    <ClCompile Include="RankWnd.cpp">
-      <Filter>Interface</Filter>
-    </ClCompile>
-    <ClCompile Include="TopDungeonHelpWnd.cpp">
-      <Filter>Interface</Filter>
-    </ClCompile>
-    <ClCompile Include="WorldWnd.cpp">
-      <Filter>Interface</Filter>
     </ClCompile>
     <ClCompile Include="GMTool.cpp">
       <Filter>GMTool</Filter>
@@ -977,6 +977,9 @@
     <ClInclude Include="CharSelectProcess.h">
       <Filter>CharSelect</Filter>
     </ClInclude>
+    <ClInclude Include="WorldProcess.h">
+      <Filter>World</Filter>
+    </ClInclude>
     <ClInclude Include="WorldMsg.h">
       <Filter>World\World Msg</Filter>
     </ClInclude>
@@ -989,8 +992,14 @@
     <ClInclude Include="WorldMsg_yak.h">
       <Filter>World\World Msg</Filter>
     </ClInclude>
-    <ClInclude Include="WorldProcess.h">
-      <Filter>World</Filter>
+    <ClInclude Include="DungeonProcess.h">
+      <Filter>Dungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="DungeonProcess2nd.h">
+      <Filter>Dungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="DungeonProcess_Sound.h">
+      <Filter>Dungeon</Filter>
     </ClInclude>
     <ClInclude Include="DungeonMsg.h">
       <Filter>Dungeon\Dungeon Msg</Filter>
@@ -1009,15 +1018,6 @@
     </ClInclude>
     <ClInclude Include="DungeonMsg_yak.h">
       <Filter>Dungeon\Dungeon Msg</Filter>
-    </ClInclude>
-    <ClInclude Include="DungeonProcess.h">
-      <Filter>Dungeon</Filter>
-    </ClInclude>
-    <ClInclude Include="DungeonProcess2nd.h">
-      <Filter>Dungeon</Filter>
-    </ClInclude>
-    <ClInclude Include="DungeonProcess_Sound.h">
-      <Filter>Dungeon</Filter>
     </ClInclude>
     <ClInclude Include="PathFinding\BlockLineManager.h">
       <Filter>PathFinding</Filter>
@@ -1057,6 +1057,66 @@
     </ClInclude>
     <ClInclude Include="EffectProcess.h">
       <Filter>Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="ChatListWnd.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="ComboBox.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandWnd.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="DefaultWnd.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="GameDefaultWnd.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="GameMenuWnd.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="GameNoticeWnd.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="GroupWnd.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="HelpWnd.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="InitItemWnd.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="MessengerDeleteWnd.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="MessengerWnd.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="NpcDungeonInfoWnd.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="OkWnd.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="RankNpcWnd.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="RankWnd.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="TopDungeonHelpWnd.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldWnd.h">
+      <Filter>Interface</Filter>
     </ClInclude>
     <ClInclude Include="BaloonChat.h">
       <Filter>Interface\BaloonChat</Filter>
@@ -1186,66 +1246,6 @@
     </ClInclude>
     <ClInclude Include="GuardianWnd.h">
       <Filter>Interface\Guandina Status Wnd</Filter>
-    </ClInclude>
-    <ClInclude Include="ChatListWnd.h">
-      <Filter>Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="ComboBox.h">
-      <Filter>Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="CommandWnd.h">
-      <Filter>Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="DefaultWnd.h">
-      <Filter>Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="GameDefaultWnd.h">
-      <Filter>Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="GameMenuWnd.h">
-      <Filter>Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="GameNoticeWnd.h">
-      <Filter>Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="GroupWnd.h">
-      <Filter>Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="HelpWnd.h">
-      <Filter>Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="InitItemWnd.h">
-      <Filter>Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="Interface.h">
-      <Filter>Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="Menu.h">
-      <Filter>Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="MessengerDeleteWnd.h">
-      <Filter>Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="MessengerWnd.h">
-      <Filter>Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="NpcDungeonInfoWnd.h">
-      <Filter>Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="OkWnd.h">
-      <Filter>Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="RankNpcWnd.h">
-      <Filter>Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="RankWnd.h">
-      <Filter>Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="TopDungeonHelpWnd.h">
-      <Filter>Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="WorldWnd.h">
-      <Filter>Interface</Filter>
     </ClInclude>
     <ClInclude Include="GMTool.h">
       <Filter>GMTool</Filter>
@@ -1417,6 +1417,106 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <None Include="crBaseMenu.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="corum.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Data\Cursor\m_attack.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Data\Cursor\m_attack_c.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Data\Cursor\m_button.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Data\Cursor\m_button_c.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Data\Cursor\m_common.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Data\Cursor\m_common_c.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Data\Cursor\m_dialog.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Data\Cursor\m_dialog_c.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Data\Cursor\m_item.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Data\Cursor\m_item_c.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Data\Cursor\m_target.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Data\Cursor\m_target_c.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="CorumResource.erd">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="default.rtl">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="default2.rtl">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="DefResource.erd">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="DefResource.erl">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="Resource.erl">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="resource1.erl">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="resource2.erl">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="resource3.erl">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="SoundLib.dll">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="SS3DExecutiveForCorum.dll">
+      <Filter>SS3DEngine</Filter>
+    </None>
+    <None Include="SS3DFileStorage.dll">
+      <Filter>SS3DEngine</Filter>
+    </None>
+    <None Include="SS3DGeometryForCorum.dll">
+      <Filter>SS3DEngine</Filter>
+    </None>
+    <None Include="SS3DGFunc.dll">
+      <Filter>SS3DEngine</Filter>
+    </None>
+    <None Include="SS3DGFuncN.dll">
+      <Filter>SS3DEngine</Filter>
+    </None>
+    <None Include="SS3DGFuncSSE.dll">
+      <Filter>SS3DEngine</Filter>
+    </None>
+    <None Include="SS3DRendererForCorum.dll">
+      <Filter>SS3DEngine</Filter>
+    </None>
+    <None Include="CommonServer.dll">
+      <Filter>CommonServer</Filter>
+    </None>
+    <None Include="CorumOnlineProject.dsp" />
+    <None Include="CorumVerInfo.ver" />
+  </ItemGroup>
+  <ItemGroup>
     <ResourceCompile Include="Resource.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
@@ -1434,105 +1534,5 @@
     <Library Include="CommonServer.lib">
       <Filter>CommonServer</Filter>
     </Library>
-  </ItemGroup>
-  <ItemGroup>
-    <CustomBuild Include="crBaseMenu.inl">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="corum.ico">
-      <Filter>Resource Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="Data\Cursor\m_attack.cur">
-      <Filter>Resource Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="Data\Cursor\m_attack_c.cur">
-      <Filter>Resource Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="Data\Cursor\m_button.cur">
-      <Filter>Resource Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="Data\Cursor\m_button_c.cur">
-      <Filter>Resource Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="Data\Cursor\m_common.cur">
-      <Filter>Resource Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="Data\Cursor\m_common_c.cur">
-      <Filter>Resource Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="Data\Cursor\m_dialog.cur">
-      <Filter>Resource Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="Data\Cursor\m_dialog_c.cur">
-      <Filter>Resource Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="Data\Cursor\m_item.cur">
-      <Filter>Resource Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="Data\Cursor\m_item_c.cur">
-      <Filter>Resource Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="Data\Cursor\m_target.cur">
-      <Filter>Resource Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="Data\Cursor\m_target_c.cur">
-      <Filter>Resource Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="CorumResource.erd">
-      <Filter>Resource</Filter>
-    </CustomBuild>
-    <CustomBuild Include="default.rtl">
-      <Filter>Resource</Filter>
-    </CustomBuild>
-    <CustomBuild Include="default2.rtl">
-      <Filter>Resource</Filter>
-    </CustomBuild>
-    <CustomBuild Include="DefResource.erd">
-      <Filter>Resource</Filter>
-    </CustomBuild>
-    <CustomBuild Include="DefResource.erl">
-      <Filter>Resource</Filter>
-    </CustomBuild>
-    <CustomBuild Include="Resource.erl">
-      <Filter>Resource</Filter>
-    </CustomBuild>
-    <CustomBuild Include="resource1.erl">
-      <Filter>Resource</Filter>
-    </CustomBuild>
-    <CustomBuild Include="resource2.erl">
-      <Filter>Resource</Filter>
-    </CustomBuild>
-    <CustomBuild Include="resource3.erl">
-      <Filter>Resource</Filter>
-    </CustomBuild>
-    <CustomBuild Include="SoundLib.dll">
-      <Filter>sound</Filter>
-    </CustomBuild>
-    <CustomBuild Include="SS3DExecutiveForCorum.dll">
-      <Filter>SS3DEngine</Filter>
-    </CustomBuild>
-    <CustomBuild Include="SS3DFileStorage.dll">
-      <Filter>SS3DEngine</Filter>
-    </CustomBuild>
-    <CustomBuild Include="SS3DGeometryForCorum.dll">
-      <Filter>SS3DEngine</Filter>
-    </CustomBuild>
-    <CustomBuild Include="SS3DGFunc.dll">
-      <Filter>SS3DEngine</Filter>
-    </CustomBuild>
-    <CustomBuild Include="SS3DGFuncN.dll">
-      <Filter>SS3DEngine</Filter>
-    </CustomBuild>
-    <CustomBuild Include="SS3DGFuncSSE.dll">
-      <Filter>SS3DEngine</Filter>
-    </CustomBuild>
-    <CustomBuild Include="SS3DRendererForCorum.dll">
-      <Filter>SS3DEngine</Filter>
-    </CustomBuild>
-    <CustomBuild Include="CommonServer.dll">
-      <Filter>CommonServer</Filter>
-    </CustomBuild>
-    <CustomBuild Include="CorumOnlineProject.dsp" />
-    <CustomBuild Include="CorumVerInfo.ver" />
   </ItemGroup>
 </Project>

@@ -432,7 +432,7 @@ typedef struct __tag_skill_list__
 
 typedef struct __tag_skill_list_manager__
 {
-	SSKILL_LIST	pSkillList[5];
+	SSKILL_LIST	pSkillList[10];
 
 	BYTE byLeftSkillCnt;
 	BYTE byRightSkillCnt;

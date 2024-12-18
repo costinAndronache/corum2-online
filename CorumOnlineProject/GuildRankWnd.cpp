@@ -288,7 +288,7 @@ int CGuildRankWnd::CheckInterface()
 				
 				__lstrcpyn(pPacket.szGuildName, g_pGuildInfo.szGuildName, MAX_GUILD_NAME_REAL_LENGTH);								
 
-				for(i = 8; i < 12; i++)
+				for(int i = 8; i < 12; i++)
 				{
 					__lstrcpyn(szTemp, g_pInputManager->GetInputBuffer(i), MAX_RANK_REAL_NAME);
 
@@ -658,7 +658,7 @@ void CGuildRankWnd::GuildMsg()
 	memset(pPacket.szGuildName, 0, sizeof(pPacket.szGuildName));				
 	__lstrcpyn(pPacket.szGuildName, g_pGuildInfo.szGuildName, MAX_GUILD_NAME_REAL_LENGTH);
 
-	for(i = 8; i < 12; i++)
+	for(int i = 8; i < 12; i++)
 	{
 		__lstrcpyn(szText, g_pInputManager->GetInputBuffer(i), MAX_RANK_REAL_NAME);
 

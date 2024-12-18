@@ -584,7 +584,7 @@ void CmdMakingItemCancel( char* pMsg, DWORD dwLen )
 		}
 	}
 
-	for(i = 1; i < 4; i++)
+	for(int i = 1; i < 4; i++)
 	{
 		if(pPacket->pItem[i].GetID()!=0)
 		{
@@ -613,7 +613,7 @@ void CmdMakingItemCancel( char* pMsg, DWORD dwLen )
 
 	CItemMakingWnd* pItemMakingWnd = CItemMakingWnd::GetInstance();
 	
-	for(i = 0; i < 4; i++)
+	for(int i = 0; i < 4; i++)
 		memcpy(&pItemMakingWnd->m_pMakingItem[i], &pPacket->pItem[0], sizeof(CItem));
 		
 	pItemMakingWnd->m_byProcess = 0;
@@ -755,7 +755,7 @@ void CmdUpgradeCancel( char* pMsg, DWORD dwLen )
 		}
 	}
 
-	for(i = 1; i < 4; i++)
+	for(int i = 1; i < 4; i++)
 	{
 		if(pPacket->pItem[i].GetID()!=0)
 		{
@@ -784,7 +784,7 @@ void CmdUpgradeCancel( char* pMsg, DWORD dwLen )
 
 	CItemUpgradeWnd* pItemUpgradeWnd = CItemUpgradeWnd::GetInstance();
 	
-	for(i = 0; i < 4; i++)
+	for(int i = 0; i < 4; i++)
 		memcpy(&pItemUpgradeWnd->m_pUpgradeItem[i], &pPacket->pItem[0], sizeof(CItem));
 		
 	pItemUpgradeWnd->m_bWaitingUpgrade = 0;

@@ -1105,7 +1105,7 @@ void ItemChk()
 						}
 					}
 
-					for(i = 0; i < MAX_INV_SMALL_POOL; i++)
+					for(int i = 0; i < MAX_INV_SMALL_POOL; i++)
 					{
 						if(g_pMainPlayer->m_pInv_Small[i].m_wItemID==0)
 						{
@@ -1806,7 +1806,7 @@ void ItemChk()
 								}
 							}
 
-							for(i = 0; i < MAX_INV_SMALL_POOL; i++)
+							for(int i = 0; i < MAX_INV_SMALL_POOL; i++)
 							{
 								if(g_pMainPlayer->m_pInv_Small[i].m_wItemID==0)
 								{
@@ -1938,7 +1938,7 @@ void ItemChk()
 					}
 				}
 
-				for(i = 0; i < MAX_INV_SMALL_POOL; i++)
+				for(int i = 0; i < MAX_INV_SMALL_POOL; i++)
 				{
 					if(g_pMainPlayer->m_pInv_Small[i].m_wItemID==0)
 					{
@@ -4035,8 +4035,8 @@ void ItemSetWeaponR(CTDS_ITEM_PICKUP* ItemPickup, int nItemIndex, int nItemType)
 	else
 	{
 		BOOL bChk = FALSE;
-
-		for(int i = 0; i < MAX_INV_LARGE_POOL; i++)
+		int i = 0;
+		for(i = 0; i < MAX_INV_LARGE_POOL; i++)
 		{
 			if(g_pMainPlayer->m_pInv_Large[i].m_wItemID==0)
 			{
@@ -4083,7 +4083,8 @@ void ItemSetWeaponShield(CTDS_ITEM_PICKUP* ItemPickup, int nItemIndex, int nItem
 		}
 		else
 		{
-			for(int i = 0; i < MAX_INV_LARGE_POOL; i++)
+			int i = 0;
+			for(i = 0; i < MAX_INV_LARGE_POOL; i++)
 			{
 				if(g_pMainPlayer->m_pInv_Large[i].m_wItemID==0)
 				{
@@ -4119,8 +4120,8 @@ void ItemSetRing(CTDS_ITEM_PICKUP* ItemPickup, int nItemIndex, int nItemType)
 		}
 
 		BOOL bChk = FALSE;
-
-		for(int i = 0; i < MAX_INV_LARGE_POOL; i++)
+		int i = 0;
+		for(i = 0; i < MAX_INV_LARGE_POOL; i++)
 		{
 			if(g_pMainPlayer->m_pInv_Large[i].m_wItemID==0)
 			{
@@ -4147,8 +4148,8 @@ void ItemSetBoots(CTDS_ITEM_PICKUP* ItemPickup, int nItemIndex, int nItemType)
 	else
 	{
 		BOOL bChk = FALSE;
-
-		for(int i = 0; i < MAX_INV_LARGE_POOL; i++)
+		int i = 0;
+		for(i = 0; i < MAX_INV_LARGE_POOL; i++)
 		{
 			if(g_pMainPlayer->m_pInv_Large[i].m_wItemID==0)
 			{
@@ -4183,8 +4184,8 @@ void ItemSetAmule(CTDS_ITEM_PICKUP* ItemPickup, int nItemIndex, int nItemType)
 		}
 
 		BOOL bChk = FALSE;
-
-		for(int i = 0; i < MAX_INV_LARGE_POOL; i++)
+		int i = 0;
+		for(i = 0; i < MAX_INV_LARGE_POOL; i++)
 		{
 			if(g_pMainPlayer->m_pInv_Large[i].m_wItemID==0)
 			{
@@ -4211,8 +4212,8 @@ void ItemSetBelt(CTDS_ITEM_PICKUP* ItemPickup, int nItemIndex, int nItemType)
 	else
 	{
 		BOOL bChk = FALSE;
-
-		for(int i = 0; i < MAX_INV_LARGE_POOL; i++)
+		int i = 0;
+		for(i = 0; i < MAX_INV_LARGE_POOL; i++)
 		{
 			if(g_pMainPlayer->m_pInv_Large[i].m_wItemID==0)
 			{
@@ -4237,8 +4238,8 @@ void ItemSetArmor(CTDS_ITEM_PICKUP* ItemPickup, int nItemIndex, int nItemType)
 		if(g_pMainPlayer->m_MouseItem.m_wItemID==GM_ARMOR)
 		{
 			BOOL bChk = FALSE;
-
-			for(int i = 0; i < MAX_INV_LARGE_POOL; i++)
+			int i = 0;
+			for(i = 0; i < MAX_INV_LARGE_POOL; i++)
 			{
 				if(g_pMainPlayer->m_pInv_Large[i].m_wItemID==0)
 				{
@@ -4271,8 +4272,8 @@ void ItemSetArmor(CTDS_ITEM_PICKUP* ItemPickup, int nItemIndex, int nItemType)
 	else
 	{
 		BOOL bChk = FALSE;
-
-		for(int i = 0; i < MAX_INV_LARGE_POOL; i++)
+		int i = 0;
+		for(i = 0; i < MAX_INV_LARGE_POOL; i++)
 		{
 			if(g_pMainPlayer->m_pInv_Large[i].m_wItemID==0)
 			{
@@ -4299,8 +4300,8 @@ void ItemSetHelmet(CTDS_ITEM_PICKUP* ItemPickup, int nItemIndex, int nItemType)
 	else
 	{
 		BOOL bChk = FALSE;
-
-		for(int i = 0; i < MAX_INV_LARGE_POOL; i++)
+		int i = 0;
+		for(i = 0; i < MAX_INV_LARGE_POOL; i++)
 		{
 			if(g_pMainPlayer->m_pInv_Large[i].m_wItemID==0)
 			{
@@ -4327,8 +4328,8 @@ void ItemSetGlove(CTDS_ITEM_PICKUP* ItemPickup, int nItemIndex, int nItemType)
 	else
 	{
 		BOOL bChk = FALSE;
-
-		for(int i = 0; i < MAX_INV_LARGE_POOL; i++)
+		int i = 0;
+		for(i = 0; i < MAX_INV_LARGE_POOL; i++)
 		{
 			if(g_pMainPlayer->m_pInv_Large[i].m_wItemID==0)
 			{
@@ -4355,8 +4356,8 @@ void ItemSetRide(CTDS_ITEM_PICKUP* ItemPickup, int nItemIndex, int nItemType)
 	else
 	{
 		BOOL bChk = FALSE;
-
-		for(int i = 0; i < MAX_INV_LARGE_POOL; i++)
+		int i = 0;
+		for(i = 0; i < MAX_INV_LARGE_POOL; i++)
 		{
 			if(g_pMainPlayer->m_pInv_Large[i].m_wItemID==0)
 			{
@@ -4383,8 +4384,8 @@ void ItemSetMantle(CTDS_ITEM_PICKUP* ItemPickup, int nItemIndex, int nItemType)
 	else
 	{
 		BOOL bChk = FALSE;
-
-		for(int i = 0; i < MAX_INV_LARGE_POOL; i++)
+		int i = 0;
+		for(i = 0; i < MAX_INV_LARGE_POOL; i++)
 		{
 			if(g_pMainPlayer->m_pInv_Large[i].m_wItemID==0)
 			{
@@ -5470,7 +5471,7 @@ lb_ChkUpgradeFail:
 					}
 				}
 
-				for(i = 0; i < MAX_INV_SMALL_POOL; i++)
+				for(int i = 0; i < MAX_INV_SMALL_POOL; i++)
 				{
 					if(g_pMainPlayer->m_pInv_Small[i].m_wItemID==0)
 					{

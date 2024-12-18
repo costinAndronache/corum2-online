@@ -223,7 +223,7 @@ WORD CMainUser::GetSmallItemSumWeight()
 		}
 	}
 	
-	for(i = 0; i < MAX_BELT_POOL; i++)
+	for(int i = 0; i < MAX_BELT_POOL; i++)
 	{
 		if(m_pBelt[i].GetID())
 		{
@@ -392,7 +392,7 @@ void CMainUser::GetCheckUpgrade()
 		}
 	}
 
-	for(i = 0; i < 5; i++)
+	for(int i = 0; i < 5; i++)
 	{
 		if(byUpgrade[i]==8)
 		{

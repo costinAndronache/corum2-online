@@ -2497,7 +2497,7 @@ void CmdJoinDungeon( char* pMsg, DWORD dwLen )
 		g_pMainPlayer->m_pwAttackDamage_L[i]	= pJoin->pwAttackDamage_L[i];
 	}			
 	
-	for(i = 0; i < MAX_PLAYER_SHOP_INV; i++)
+	for(int i = 0; i < MAX_PLAYER_SHOP_INV; i++)
 	{
 		memset(&g_pMainPlayer->m_sPlayerShop.cItem[i], 0, sizeof(CItem));
 		g_pMainPlayer->m_sPlayerShop.m_dwCustomSellPrice[i] = 0;
@@ -2506,27 +2506,27 @@ void CmdJoinDungeon( char* pMsg, DWORD dwLen )
 	memset(g_pMainPlayer->m_sPlayerShop.szTitle, 0, sizeof(g_pMainPlayer->m_sPlayerShop.szTitle));	
 	SetProgressBar(dwTotalProgress, ++dwCurProgress);
 
-	for(i = 0; i < MAX_SKILL; i++)	
+	for(int i = 0; i < MAX_SKILL; i++)	
 		g_pMainPlayer->sSkillTable[i].bSKillLevel	= pJoin->pwSkillLevel[i];
 	SetProgressBar(dwTotalProgress, ++dwCurProgress);
 
-	for(i = 0; i < MAX_EQUIP_POOL; i++)
+	for(int i = 0; i < MAX_EQUIP_POOL; i++)
 		memcpy(&g_pMainPlayer->m_pEquip[i], &pJoin->pEquip[i], sizeof(CItem));
 	SetProgressBar(dwTotalProgress, ++dwCurProgress);
 
-	for(i = 0; i < MAX_INV_LARGE_POOL; i++)
+	for(int i = 0; i < MAX_INV_LARGE_POOL; i++)
 		memcpy(&g_pMainPlayer->m_pInv_Large[i], &pJoin->pInv_Large[i], sizeof(CItem));
 	SetProgressBar(dwTotalProgress, ++dwCurProgress);
 
-	for(i = 0; i < MAX_INV_SMALL_POOL; i++)
+	for(int i = 0; i < MAX_INV_SMALL_POOL; i++)
 		memcpy(&g_pMainPlayer->m_pInv_Small[i], &pJoin->pInv_Small[i], sizeof(CItem));
 	SetProgressBar(dwTotalProgress, ++dwCurProgress);
 
-	for(i = 0; i < MAX_INV_GUARDIAN_POOL; i++)
+	for(int i = 0; i < MAX_INV_GUARDIAN_POOL; i++)
 		memcpy(&g_pMainPlayer->m_pInv_Guardian[i], &pJoin->pInv_Guardian[i], sizeof(CItem));	
 	SetProgressBar(dwTotalProgress, ++dwCurProgress);
 
-	for(i = 0; i < MAX_BELT_POOL; i++)
+	for(int i = 0; i < MAX_BELT_POOL; i++)
 		memcpy(&g_pMainPlayer->m_pBelt[i], &pJoin->pBelt[i], sizeof(CItem));
 	SetProgressBar(dwTotalProgress, ++dwCurProgress);
 

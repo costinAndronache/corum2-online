@@ -407,7 +407,7 @@ void CmdBankInfo(char* pMsg, DWORD dwLen)
 
 	pNode = &pPacket->Items[pPacket->bSmallItemCount];
 	
-	for(i = 0; i < pPacket->bLargeItemCount; i++)
+	for(int i = 0; i < pPacket->bLargeItemCount; i++)
 	{
 		memcpy(&g_pMainPlayer->m_pBank_Large[pNode[i].index], &pNode[i].cItem, sizeof(CItem));
 	}	

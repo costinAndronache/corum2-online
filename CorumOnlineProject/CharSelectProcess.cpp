@@ -222,7 +222,7 @@ BOOL InitGameCharSelect()
 		HideObject(g_pGVLogin->ChrSelectInfo[i].hSpotLightHandle);
 	}
 	
-	for(i = 0; i < MAX_CHAR_SELECT_NUM; i++)
+	for(int i = 0; i < MAX_CHAR_SELECT_NUM; i++)
 	{	
 		if(IsEmptyString(g_pGVLogin->ChrSelectInfo[i].ReceivedChrInfo.szName))
 			continue;
@@ -357,13 +357,13 @@ BOOL InitGameCharSelect()
 	} 
 
 	//캐릭터 생성할때 보여줄 모든 머리 모델 Load
-	for(i = 0; i < MAX_KIND_OF_HEAD_MALE; i++)
+	for(int i = 0; i < MAX_KIND_OF_HEAD_MALE; i++)
 	{
 		g_pGVLogin->EnumCharHeadForCreate[1][i] = CreateHandleObject(GetFile(RESTYPE_HEAD_MALE, 1001 + i), NULL, NULL, NULL);
 		HideObject(g_pGVLogin->EnumCharHeadForCreate[1][i]);
 	}
 	
-	for(i = 0; i < MAX_KIND_OF_HEAD_FEMALE; i++)
+	for(int i = 0; i < MAX_KIND_OF_HEAD_FEMALE; i++)
 	{
 		g_pGVLogin->EnumCharHeadForCreate[0][i] = CreateHandleObject(GetFile(RESTYPE_HEAD_FEMALE, 1001 + i), NULL, NULL, NULL);
 		HideObject(g_pGVLogin->EnumCharHeadForCreate[0][i]);
@@ -372,7 +372,7 @@ BOOL InitGameCharSelect()
 	//캐릭터 생성할때 보여줄 모든 몸통 모델 Load
 	LPObjectDesc pDesc;
 
-	for(i = 0; i < MAX_KIND_OF_CLASS; i++)
+	for(int i = 0; i < MAX_KIND_OF_CLASS; i++)
 	{
 		pDesc = AllocObjDesc();		
 		g_pGVLogin->EnumCharForCreate[i] = CreateHandleObject(GetFile(RESTYPE_BASE_BODY, i+1), GXPlayerPROC, pDesc, NULL);
@@ -464,11 +464,11 @@ void ReleaseGameCharSelect()
 	for(int i=0; i<MAX_KIND_OF_HEAD_MALE; i++)
 		DeleteObj(&g_pGVLogin->EnumCharHeadForCreate[1][i]);
 		 	
-	for(i=0; i<MAX_KIND_OF_HEAD_FEMALE; i++)
+	for(int i=0; i<MAX_KIND_OF_HEAD_FEMALE; i++)
 		DeleteObj(&g_pGVLogin->EnumCharHeadForCreate[0][i]);
 
 	//캐릭터 생성할때 보여줄 모든 몸통 모델 Delete		
-	for(i = 0; i < MAX_KIND_OF_CLASS; i++)
+	for(int i = 0; i < MAX_KIND_OF_CLASS; i++)
 	{
 		pDesc = (LPObjectDesc)g_pExecutive->GetData(g_pGVLogin->EnumCharForCreate[i]);
 
@@ -476,7 +476,7 @@ void ReleaseGameCharSelect()
 		DeleteObj(&g_pGVLogin->EnumCharForCreate[i]);
 	}
 	
-	for(i=0; i<MAX_CHAR_SELECT_NUM; i++)
+	for(int i=0; i<MAX_CHAR_SELECT_NUM; i++)
 	{
 		DeleteObj(&g_pGVLogin->ChrSelectInfo[i].hGroundHandle);
 		DeleteObj(&g_pGVLogin->ChrSelectInfo[i].hSpotLightHandle);
@@ -914,7 +914,7 @@ void CharSelectMouseProcess(WPARAM wParam, LPARAM lParam, BYTE byType)
 		}		
 	}
 
-	for(i = 0; i < 5; i++)
+	for(int i = 0; i < 5; i++)
 	{
 		dwBtnID		= BUTTON_CLASS_WARRIOR + i;
 		dwDownBtnID = BUTTON_CLASS_WARRIOR_DOWN + i;
@@ -1862,7 +1862,7 @@ BOOL CreateMainPlayer(WSTC_WORLD_USER_INFO* pInfo)
 	
 	dwRand = GetRandom(16);
 
-	for(i = 0; i < 16; i++)
+	for(int i = 0; i < 16; i++)
 	{
 		if(i == dwRand)
 		{
